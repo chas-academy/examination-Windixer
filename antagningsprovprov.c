@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
+#include <ctype.h> // For toupper function
 
 double medelpoäng(int result[5][13], int a) {
     double sum = 0;
@@ -22,6 +23,7 @@ double jämför(double Array_medelpoäng[5], char names[5][50]) {
             index = i;
         }
     }
+    names[index][0] = toupper(names[index][0]); // Capitalize the first letter of the name
     printf("%s\n", names[index]);
 }
 double Totala_medelpoäng(double Array_medelpoäng[5]) {
@@ -52,6 +54,7 @@ int main () {
     for (int i = 0; i < 5; i++) {
         if (Array_medelpoäng[i] < Totala_medelpoäng_variabel) {
   //        under_medelpoäng[i] = Array_medelpoäng[i];
+  names[i][0] = toupper(names[i][0]); // Capitalize the first letter of the name
             printf("%s\n", names[i]);
         }
     }
