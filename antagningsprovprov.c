@@ -37,7 +37,7 @@ int main () {
     int results[5][13];
     double Array_medelpoäng[5];
     for (int i = 0; i < 5; i++) {
-        printf("Enter name and results of student %d: ", i + 1);
+   //     printf("Enter name and results of student %d: ", i + 1);
         scanf("%10s %d %d %d %d %d %d %d %d %d %d %d %d %d", names[i], &results[i][0], &results[i][1], &results[i][2],
              &results[i][3], &results[i][4], &results[i][5], &results[i][6], &results[i][7], &results[i][8], &results[i][9],
               &results[i][10], &results[i][11], &results[i][12]);
