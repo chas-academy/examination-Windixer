@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
-#include <ctype.h> // For toupper function
+#include <ctype.h> // For toupper functions
 
 double medelpoäng(int result[5][13], int a) {
     double sum = 0;
